@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width:100%;
+  background: linear-gradient(60deg,#d2001a,#7462ff,orange,red);
+  background-size: 300% 300%;
+}
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+@keyframes color{
+  0%{
+      background-position: 0% 50%;
+  }
+  50%{
+      background-position: 100%  50%;
+  }
+  100%{
+      background-position: 0% 50%;
+  }
+}
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
+  animation: color 12s ease-in-out infinite;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+input, textarea {
+  margin-bottom: 16px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  background-color: purple;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.submit {
+  padding: 10px;
+  background-color: purple;
+  color: #e20b0b;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #45a049;
+}
+
